@@ -14,7 +14,8 @@ services:
       - N8N_ENABLED_MODULES=instance-ai
       
       # Modèle DeepSeek via OpenRouter
-      - N8N_INSTANCE_AI_MODEL=openrouter/deepseek/deepseek-v4-pro
+      - N8N_INSTANCE_AI_MODEL=custom/deepseek-v4-pro
+      - N8N_INSTANCE_AI_MODEL_URL=https://api.deepseek.com/v1
       - N8N_INSTANCE_AI_MODEL_API_KEY=${DEEPSEEK_API_KEY}
       
       # Sandbox Daytona (obligatoire)
